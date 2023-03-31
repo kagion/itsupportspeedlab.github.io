@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      IT Support Speedlab Indonesia
+    </title>
+    <meta name="description" content="Simple landind page" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+      .gradient {
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+      }
+    </style>
+  </head>
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <!--Icon from: http://www.potlabicons.com/ -->
+            <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+              <path
+                class="plane-take-off"
+                d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
+              />
+            </svg>
+            IT Support
+          </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-black no-underline hover:underline scale-105 font-bold duration-300 ease-in-out" href="#">Home</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:underline text-black-800 text-underline py-2 px-4 focus:outline-none focus:shadow-outline transform transition hover:scale-105 font-bold duration-300 ease-in-out" href="#layanan">Layanan</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:underline text-black-800 text-underline py-2 px-4 focus:outline-none focus:shadow-outline transform transition hover:scale-105 font-bold duration-300 ease-in-out" href="#formulir">Formulir</a>
+            </li>
+          </ul>
+          <a href="#panduan">
+          <button
+            id="navAction"
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            Panduan
+          </button>
+          </a>
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <!--Hero-->
+    <div class="pt-24">
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <p class="uppercase tracking-loose w-full">Apa yang anda butuhkan?</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            Kami siap melayani kebutuhan anda!
+          </h1>
+          
+          <a href="https://api.whatsapp.com/send/?phone=6283839076080&text&type=phone_number&app_absent=0">
+            <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              Whatsapp
+            </button>
+          </a>
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-3/5 py-6 text-center">
+          <img class="w-full md:w-4/5 z-50" src="hero.png" />
+        </div>
+      </div>
+    </div>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <section id="layanan" class="bg-white border-b py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Layanan
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Dukungan Perbaikan
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Jika Laptop atau printer anda mengalami bermasalah atau apapun yang berkaitan dengan hardware perangkat keras IT silahkan mengisi form perbaikan dibawah ini dan disertai dengan foto kerusakanya
+              <br />
+              <br />
+
+              Klik Disini:
+
+              <a class="text-pink-500 underline" href="https://forms.gle/LBtqtRpxU6MRTYD2A">form perbaikan</a>
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 p-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5">
+
+              <defs>
+              
+              <style xmlns="http://www.w3.org/1999/xhtml">*, ::after, ::before { box-sizing: border-box; }
+              img, svg { vertical-align: middle; }
+              </style>
+              
+              <style xmlns="http://www.w3.org/1999/xhtml">*, body, html { -webkit-font-smoothing: antialiased; }
+              img, svg { max-width: 100%; }
+              </style>
+              
+              </defs>
+              
+              <ellipse cx="576.41" cy="615.48" rx="152.39" ry="43.38" fill="#ff6347" data-primary="true"/>
+              
+              <ellipse cx="576.41" cy="615.48" rx="152.39" ry="43.38" fill="#fff" opacity="0.7"/>
+              
+              <path d="M759.74,294c-97,180.8-246.53,200.63-246.53,200.63a706.6,706.6,0,0,1-72.78,9.07c-1.54.11-3.09.21-4.64.3-155.07,9.75-243.59-43.6-292.74-96.71-50.71-54.81-72.3-131-55.79-203.81C115.5,79,235.68,38.82,235.68,38.82c26-10.29,54.1-14.33,81.22-14.75,71.94-1.14,136.85,23.11,136.85,23.11a556.66,556.66,0,0,0,58.34,16.53c40.18,8.86,59.27,7,59.27,7,70.61-11.47,118.82-.11,118.82-.11,68.69,14.51,89.09,66,93.06,111.42A200.46,200.46,0,0,1,759.74,294Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M759.74,294c-97,180.8-246.53,200.63-246.53,200.63a706.6,706.6,0,0,1-72.78,9.07c-1.54.11-3.09.21-4.64.3-68.33,4.29-123.72-3.66-168.54-18.45a308.7,308.7,0,0,1-59.91-26.86c-.27-.14-.55-.3-.82-.47-2.33-1.36-4.63-2.76-6.87-4.17a277.57,277.57,0,0,1-56.6-46.76c-50.71-54.81-72.3-131-55.79-203.81C115.5,79,235.68,38.82,235.68,38.82c26-10.29,54.1-14.33,81.22-14.75,71.94-1.14,136.85,23.11,136.85,23.11a556.66,556.66,0,0,0,58.34,16.53c40.18,8.86,59.27,7,59.27,7,70.61-11.47,118.82-.11,118.82-.11,68.69,14.51,89.09,66,93.06,111.42A200.46,200.46,0,0,1,759.74,294Z" fill="#fff" opacity="0.7"/>
+              
+              <rect x="191.74" y="142.49" width="288.18" height="381.74" fill="#ff6347" data-primary="true"/>
+              
+              <rect x="191.74" y="142.49" width="288.18" height="381.74" fill="#fff" opacity="0.5"/>
+              
+              <rect x="211.7" y="161.2" width="244.51" height="233.29" fill="#fff" opacity="0.5"/>
+              
+              <path d="M335.83,269.88s20.59-22.6,36.8-26.34l5,8.73v-12s22.74-9.17,48.8-5.42c0,0,2.12,11.51-4,35.07h-7.71l6.91,4.64s-1.42,5.2-4,12.68l-22,32.68L335,339.6Z" fill="#2f2e41" data-secondary="true"/>
+              
+              <path d="M341.52,323.29c9.67-18.23,23.29-34.08,37.56-48.86a348.64,348.64,0,0,1,34.84-30.54c4.13-3.08,8.31-6.09,12.5-9.08-4,3.22-8.12,6.32-12.12,9.56A419.55,419.55,0,0,0,380,275.3c-14.33,14.67-28,30.31-38.45,48Z" opacity="0.2"/>
+              
+              <path d="M384,246.11c4.17,6.23,4.39,14.49,2.79,21.62-.14-7.19-.26-14.81-2.79-21.62Z" opacity="0.2"/>
+              
+              <path d="M374,280.55c7.67-3.15,17.49-3,24.19,2.31-7.53-3.68-16.08-3.73-24.19-2.31Z" opacity="0.2"/>
+              
+              <path d="M444.43,111h88.45a6.3,6.3,0,0,1,6.3,6.3v47.29a6.3,6.3,0,0,1-6.3,6.29H522.44a22.73,22.73,0,0,0,5.5,9.36c-8.33-.93-12.5-5.24-14.6-9.36H444.43a6.3,6.3,0,0,1-6.3-6.29V117.29A6.3,6.3,0,0,1,444.43,111Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M467.17,323.38H458l9.18,4.37c-5.25,25.57-30.91,50.52-30.91,50.52l-13.72-7.48L430,382c-2.49,6.24-14.4,12.48-14.4,12.48H358.91l-16.22-66.12c-.42-1.72-.82-3.4-1.17-5.08,28.66-36.09,48.93-37.7,48.93-37.7l7.76,12.84V282.86c53-13.06,78-6.88,78-6.88C477.43,305.92,467.17,323.38,467.17,323.38Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M467.17,323.38H458l9.18,4.37c-5.25,25.57-30.91,50.52-30.91,50.52l-13.72-7.48L430,382c-2.49,6.24-14.4,12.48-14.4,12.48H358.91l-16.22-66.12c-.42-1.72-.82-3.4-1.17-5.08,28.66-36.09,48.93-37.7,48.93-37.7l7.76,12.84V282.86c53-13.06,78-6.88,78-6.88C477.43,305.92,467.17,323.38,467.17,323.38Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M354.51,374.58A761.15,761.15,0,0,1,419.7,315c17.75-14.34,36.42-28.07,56.48-39l-8.36,5.13c-2.38,1.4-5.83,3.85-8.19,5.4-37.79,25.83-71.92,56.66-105.12,88.07Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M408.9,290.66c7,7.69,8.21,19.67,3.71,28.92-.64,1.31-1.41,2.56-2.15,3.8.5-1.37,1.14-2.66,1.59-4a32.34,32.34,0,0,0-3.15-28.69Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M440.8,346.77c-11.84-9.52-29.87-8.34-44.15-6.67-2.17.31-4.34.67-6.53.95,2.13-.56,4.28-1,6.43-1.56,14.07-2.66,33.35-3.63,44.25,7.28Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M361.28,319.09c6.29,6.32,8.35,15.75,8.41,24.41A63.63,63.63,0,0,1,367.63,358c-.6,1.86-1.17,3.72-1.8,5.55.36-1.91.8-3.79,1.2-5.68,2.34-12.94,2.53-27.8-5.75-38.76Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M355.43,380.31c13.11-2.53,31.57-3.71,42.78,4.66a30.74,30.74,0,0,0-4.94-2.3c-5.1-1.88-10.58-2.49-16-2.82a162.68,162.68,0,0,0-21.85.46Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M171.78,237.3s-6.23,34.93,7.49,58.64h18.87L183,302.17s10,29.29,42.41,29.62l-3.12-87.92S205.47,236.05,171.78,237.3Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M171.78,237.3s-6.23,34.93,7.49,58.64h18.87L183,302.17s10,29.29,42.41,29.62l-3.12-87.92S205.47,236.05,171.78,237.3Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M171.78,237.3s-6.23,34.93,7.49,58.64h18.87L183,302.17s10,29.29,42.41,29.62l-3.12-87.92S205.47,236.05,171.78,237.3Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M171.78,237.3c16.19,14.12,31.92,28.95,47,44.29-16.19-14.12-31.92-28.95-47-44.29Z" opacity="0.2"/>
+              
+              <path d="M188,288.45c10.31-3.31,21.53-4.73,32.26-2.86-10.82-.14-21.58,1.22-32.26,2.86Z" opacity="0.2"/>
+              
+              <path d="M168.29,307s.53,79.65,61.9,86.05l4.51-51.76L222.26,313a115.61,115.61,0,0,0-14.63-4.62l-2.14,7.49-1.36-7.49S186,304.38,168.29,307Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M168.29,307s.53,79.65,61.9,86.05l4.51-51.76L222.26,313a115.61,115.61,0,0,0-14.63-4.62l-2.14,7.49-1.36-7.49S186,304.38,168.29,307Z" fill="#2f2e41" data-secondary="true"/>
+              
+              <path d="M168.29,307c18.41,16.62,37.32,34.44,56.21,50.39l3.89,3.2c-21.78-15.75-41.3-34.45-60.1-53.59Z" opacity="0.2"/>
+              
+              <path d="M205.49,379.07c5.52-6.16,14-8.93,22-10.23-7.52,3-15.37,5.44-22,10.23Z" opacity="0.2"/>
+              
+              <path d="M222.54,356.07c-2.55-8.69-5-23.34,1.28-30.79a12.9,12.9,0,0,0-1.59,3.56c-2.25,8.89-.63,18.24.31,27.23Z" opacity="0.2"/>
+              
+              <path d="M186,346.77c6.87-3.64,16.2-6.19,23.3-1.85-7.68-2.61-15.76-.13-23.3,1.85Z" opacity="0.2"/>
+              
+              <path d="M326.28,161.17s19.33,14.45,21.62,30.32c0,0-12-17.54-30.78-12.2l.35-12.43S320.86,165.57,326.28,161.17Z" fill="#2f2e41" data-secondary="true"/>
+              
+              <path d="M646.94,383c-.15,28.45-12.11,217.3-12.11,217.3-1.15.21-2.39.39-3.68.54-14.06,1.56-35.85-.54-35.85-.54H568.5L557.24,390.67l-.56-10.36,23-40.71,51.15,38.67Z" fill="#2f2e41" data-secondary="true"/>
+              
+              <path d="M646.94,383c-.15,28.45-12.11,217.3-12.11,217.3-1.15.21-2.39.39-3.68.54l-2.77-64.16-7.49-125.27c-3-27.13-46-23.45-63.65-20.77l-.56-10.36,23-40.71,51.15,38.67Z" opacity="0.2"/>
+              
+              <path d="M557.92,403.27c9.29-3.77,12.83,10.38,14.12,17,.66,3.43,1.38,9,1.91,12.49,4.48,30.75,11.47,81.65,15.58,112.53,1.65,12.42,4.88,37.63,6.41,50.08-7-45.66-15-104-21.13-150-.54-4.09-1.94-14.81-2.46-18.78-.9-6.64-1.75-13.72-5.23-19.58-1.94-3.12-5.51-5.56-9.2-3.73Z" opacity="0.2"/>
+              
+              <path d="M673.29,313.4h0l-42.4,64.86a146.31,146.31,0,0,0-28.33-3.84A80.1,80.1,0,0,0,576.33,378c-12.89,3.88-21,1.65-21.53,1.49h0l-5-52.4c-1.25,2.5-10,3.75-10,3.75,6.24-27.45-5-43.67-5-43.67,7.49-52.39,13.28-54.89,13.28-54.89,4.54-13.72,36.15-24.09,36.15-24.09l41.1-.88c23.17,8.7,31.82,14.76,31.82,14.76,18.8,8.49,16.13,23.31,16.13,23.31C679.52,289.7,673.29,313.4,673.29,313.4Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M615.9,170.56c0,8.65-2.64,16.47-6.89,22h0c-4,5.3-9.5,8.54-15.55,8.54a15.45,15.45,0,0,1-2.65-.22C579.65,199.13,571,186.22,571,170.56c0-16.88,10.06-30.56,22.46-30.56S615.9,153.68,615.9,170.56Z" fill="#f9b499"/>
+              
+              <path d="M622.26,181.16l-3.25,6c.61,14.72-10,5.43-10,5.43,6.83-11,3.7-16,3.7-16-9.42,2.85-5.54-12.84-5.54-12.84,0-13.72-11.23-11.23-11.23-11.23-13.72,3.74-17.28-4.9-17.28-4.9-2.32,2.58-5.09,8.76-5.09,8.76C567.42,150.2,568.5,135,568.5,135l5,1.24c-1.25-5,2.49-8.73,2.49-8.73,2.5,6.24,13.72,5,13.72,5l28.7,2.5c17.46,5,7.48,23.7,7.48,23.7C639.6,168.69,622.26,181.16,622.26,181.16Z" fill="#2f2e41" data-secondary="true"/>
+              
+              <path d="M612.71,176.54c-9.42,2.85-5.54-12.84-5.54-12.84,0-13.72-11.23-11.23-11.23-11.23-13.72,3.74-17.28-4.9-17.28-4.9-2.32,2.58-5.09,8.76-5.09,8.76-5.46-5.45-5.22-18-5.1-20.79a.08.08,0,0,1,.16,0c.58,2.07,2.88,9.63,6.1,10.7,0,0,0-7.48,2.5-8.73,0,0,2.49,13.72,17.46,12.48,0,0,13.09-3.82,17.78,4.32,0,0,2.79,2.8,0,9.85C612.47,164.15,609.53,173.15,612.71,176.54Z" opacity="0.2"/>
+              
+              <ellipse cx="616.52" cy="181.16" rx="7.49" ry="5.61" transform="translate(251.36 709.92) rotate(-71.75)" fill="#f9b499"/>
+              
+              <path d="M599.8,222c-17,.93-11.34-9.68-11.34-9.68.62-4.36,2-8.47,2.34-11.45a15.45,15.45,0,0,0,2.65.22c6,0,11.52-3.24,15.55-8.54h0c.46,3,2.74,9.2,3.82,12a11.38,11.38,0,0,1,.83,4.42C613.33,219.14,599.8,222,599.8,222Z" fill="#f9b499"/>
+              
+              <path d="M590.8,200.9l-1.72,8.33S596,215,610.29,197.45L609,192.58S601.88,203.17,590.8,200.9Z" fill="#f7a48b"/>
+              
+              <path d="M593.45,221.66s-8.74,1.92-8.74,10.65c0,0-9.78-22.27,5.71-29.22,0,0-.72,4.27-2,9.26C588.46,212.35,584.71,219.74,593.45,221.66Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M593.45,221.66s-8.74,1.92-8.74,10.65c0,0-9.78-22.27,5.71-29.22,0,0-.72,4.27-2,9.26C588.46,212.35,584.71,219.74,593.45,221.66Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M547.29,254.77c.44,20,.31,41,2,60.83.17,1.34.31,2.69.45,4-2.25-10.62-2.73-21.54-3.12-32.36-.21-10.84-.13-21.69.63-32.51Z" opacity="0.2"/>
+              
+              <path d="M673.27,313.41l-42.4,64.86a146.31,146.31,0,0,0-28.33-3.84A80.1,80.1,0,0,0,576.33,378c-12.89,3.88-21,1.65-21.53,1.49h0c18.72-3.74,46-16.88,46-16.88,16-8.13,15.79-21.42,15.79-21.42,4.37-24.59,14.65-32.6,14.65-32.6C662.77,319.45,673,313.6,673.27,313.41Z" opacity="0.2"/>
+              
+              <path d="M673.29,313.4h0c-10,2.51-10.44,1-10.44,1,9.5-31.41-2.23-59.65-2.23-59.65-9-25-42.78-31.61-42.78-31.61a37.73,37.73,0,0,0,7.52-15.82c23.17,8.7,31.82,14.76,31.82,14.76,18.8,8.49,16.13,23.31,16.13,23.31C679.52,289.7,673.29,313.4,673.29,313.4Z" opacity="0.2"/>
+              
+              <path d="M567.86,600.33s-34.41,21.13-24.63,28.86a6.72,6.72,0,0,0,4.17,1.33l56.32,1.25s7.19-1.5,4.7-10.23l-3.12-21.83Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M567.86,600.33s-34.41,21.13-24.63,28.86a6.72,6.72,0,0,0,4.17,1.33l56.32,1.25s7.19-1.5,4.7-10.23l-3.12-21.83Z" opacity="0.2"/>
+              
+              <path d="M541.9,319.55a43.81,43.81,0,0,1-2.1,11.32c-29.94,8.73-42.41-58.64-42.41-58.64C493.64,259.76,483.66,256,483.66,256c-16.21-7.49-10-15-10-15a12.42,12.42,0,0,1,6.68-6.24c11.84-4.36,29.5,12.47,29.5,12.47,2.2.74,3.16-2.21,3.57-4.76a1.18,1.18,0,0,1,2.29-.18c1.81,5.73-.87,14.92-.87,14.92-2.49,10,0,11.23,0,11.23l20,18.71A60.26,60.26,0,0,1,541.9,319.55Z" fill="#f9b499"/>
+              
+              <path d="M541.9,319.55a43.81,43.81,0,0,1-2.1,11.32c-29.94,8.73-42.41-58.64-42.41-58.64C493.64,259.76,483.66,256,483.66,256c-16.21-7.49-10-15-10-15a12.42,12.42,0,0,1,6.68-6.24s-9.17,8.73,3.3,15c0,0,9.9,4.94,18,17.67a56,56,0,0,1,7.68,20.44c1.8,10.28,8.46,32.71,32.18,31.75Z" fill="#f7a48b"/>
+              
+              <ellipse cx="313.38" cy="135.01" rx="21.83" ry="32.44" fill="#f9b499"/>
+              
+              <path d="M351.43,117.54a36.33,36.33,0,0,1-2.5,10c-4.75,11.14-13.72,11-13.72,11a68.16,68.16,0,0,0-.56-10.76c-.56-1-6.93-4-6.93-4s-11.82,16.07-35.85,16.76a39,39,0,0,0,3.72,13.25l3.05,5.14c.69,15.12-16.16,20.28-23,21.73a49.51,49.51,0,0,0-9,2.86c-39.17,16.83-43.69,57.53-43.69,57.53-10-25,11.23-39.93,11.23-39.93l22.45-18.71c21.21-17.46,13.73-36.18,13.73-36.18-12.48-28.69,6.24-41.16,6.24-41.16,32.43-25,51.06-2.5,51.06-2.5C352.5,95.09,351.43,117.54,351.43,117.54Z" fill="#2f2e41" data-secondary="true"/>
+              
+              <path d="M323.43,198.88c-2.58,3.33-7.17,6.19-15,3.55a26.16,26.16,0,0,1-9.37-5.7c-4.31-4-10.95-11.39-12-20,0,0,12.53-5.07,11.67-17.77,0,0,7.34,11.11,18.83,7.94v11.57s5.69.14,8,7.09A14.38,14.38,0,0,1,323.43,198.88Z" fill="#f9b499"/>
+              
+              <path d="M317.47,166.86v10.5s-12.8-2.26-15.62-14.82C301.85,162.54,309.72,170,317.47,166.86Z" fill="#f7a48b"/>
+              
+              <path d="M342.69,328.37l16.22,66.12H230.42a138.33,138.33,0,0,1-2.16-30.25A117.81,117.81,0,0,1,242.12,313c2.89-5.49,5.86-11.95,7-17.09,0,0-11.49,5.51-20.53,3.31a12.41,12.41,0,0,1-8.34-6.26s-4.81-19.51,2.67-51.94c0,0,5-41.45,43.69-57.53a37.26,37.26,0,0,1,6.47-2.32c.83-.21,1.69-.4,2.55-.54a44.39,44.39,0,0,0,11.33-4c1.11,8.64,7.74,16.05,12,20a26.07,26.07,0,0,0,9.37,5.7c7.87,2.64,12.46-.22,15-3.55a14.38,14.38,0,0,0,2.06-13.35c-2-5.88-6.35-6.89-7.65-7.05-.08,0-.11-.14,0-.16,3-1,24.6-7,37.35,27.79l7.48,52.4L339,276s-3.33,19.94,2.57,47.31C341.87,325,342.27,326.65,342.69,328.37Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M245.05,251.93c-1.18,11.95-5.2,17.61-7.66,20a37.23,37.23,0,0,0-6.11,7.49c-8,13.41-2.68,19.82-2.68,19.82a12.41,12.41,0,0,1-8.34-6.26s-4.81-19.51,2.67-51.94c0,0,5-41.45,43.69-57.53a37.26,37.26,0,0,1,6.47-2.32c-31,13.55-29.56,48.67-28.23,60A49.28,49.28,0,0,1,245.05,251.93Z" opacity="0.2"/>
+              
+              <path d="M220.26,293s-.25,28.52,9.94,53.78c0,0,2.41-15.4,11.92-33.74a64.35,64.35,0,0,0,7-17.09S228.82,306.27,220.26,293Z" fill="#f9b499"/>
+              
+              <path d="M228.6,299.25s.39,22.87,6.1,31a82.37,82.37,0,0,0-4.5,16.54S220.09,325,220.26,293C220.26,293,221.78,297.58,228.6,299.25Z" fill="#f7a48b"/>
+              
+              <path d="M249.13,295.94s16.22-20,24.95-34.93c0,0,2,12.15-6.7,36.46a98.14,98.14,0,0,1-4.93,11.46c-5,9.84-19.13,42.94-7.42,85.56H230.42s-5-27.95,0-48.91a104.82,104.82,0,0,1,8.4-25.7l3.87-7.81S247.88,302.17,249.13,295.94Z" opacity="0.2"/>
+              
+              <g opacity="0.2">
+              
+              <path d="M315.25,387.63a.55.55,0,0,1-.28-.07c-37.26-18.63-47.64-63.59-47.74-64a.64.64,0,0,1,.48-.75.62.62,0,0,1,.74.48c.1.44,10.36,44.84,47.08,63.2a.62.62,0,0,1,.28.83A.63.63,0,0,1,315.25,387.63Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M309,354a.54.54,0,0,1-.27-.07c-36.08-17.42-38.84-47.3-38.87-47.6a.62.62,0,0,1,.58-.67.63.63,0,0,1,.67.57c0,.29,2.75,29.49,38.16,46.58a.62.62,0,0,1,.29.83A.61.61,0,0,1,309,354Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M314,334a.65.65,0,0,1-.55-.32.62.62,0,0,1,.24-.85c16.84-9.65,13.49-34.05,13.46-34.3a.62.62,0,0,1,.52-.71.63.63,0,0,1,.71.53c0,.25,3.51,25.49-14.07,35.56A.61.61,0,0,1,314,334Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M326,330.4a.63.63,0,0,1-.51-1c6.8-9.49,5.34-20.8,5.33-20.91a.63.63,0,0,1,.53-.71.61.61,0,0,1,.7.54c.07.48,1.55,11.9-5.55,21.81A.61.61,0,0,1,326,330.4Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M274.08,261.63a.64.64,0,0,1-.47-.21.63.63,0,0,1,.06-.88c.09-.08,9.43-8.59,12.68-29.43a.62.62,0,0,1,.71-.52.62.62,0,0,1,.52.71c-3.32,21.33-12.69,29.82-13.09,30.17A.57.57,0,0,1,274.08,261.63Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M313.19,210.56c-15.1,0-23.86-12.67-23.95-12.81a.61.61,0,0,1,.16-.86.62.62,0,0,1,.87.16c.09.14,9.28,13.4,24.93,12.19a.62.62,0,0,1,.1,1.24C314.58,210.53,313.88,210.56,313.19,210.56Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M317.47,213.72a.61.61,0,0,1-.58-.4.62.62,0,0,1,.36-.8,22.13,22.13,0,0,0,11-11.44.62.62,0,0,1,.82-.32.62.62,0,0,1,.33.82,22.91,22.91,0,0,1-11.71,12.1A.54.54,0,0,1,317.47,213.72Z"/>
+              
+              </g>
+              
+              <g opacity="0.2">
+              
+              <path d="M341.45,215.47a.62.62,0,0,1-.32-.09c-6.54-3.92-4.14-16.35-4-16.87a.63.63,0,0,1,1.23.24c0,.12-2.34,12.09,3.45,15.56a.63.63,0,0,1-.32,1.16Z"/>
+              
+              </g>
+              
+              <path d="M223.82,404.29s-4.87-6.42-11,0a7.84,7.84,0,0,0,.29,8.91,9.75,9.75,0,0,0,1.93,1.92l8.77,6.92L232.1,415a10.26,10.26,0,0,0,3.62-6.44c.31-2.49-.31-5.3-4.06-6.54C231.66,402,226.67,399.48,223.82,404.29Z" fill="#fff" opacity="0.5"/>
+              
+              <path d="M394.73,499.1s-4.87-6.42-11,0A7.84,7.84,0,0,0,384,508a9.75,9.75,0,0,0,1.93,1.92l8.77,6.92,8.28-7.07a10.29,10.29,0,0,0,3.62-6.44c.31-2.5-.31-5.31-4.06-6.55C402.57,496.79,397.58,494.29,394.73,499.1Z" fill="#fff" opacity="0.5"/>
+              
+              <path d="M265.35,410.08a10.61,10.61,0,1,0-10.61,10.61,10.35,10.35,0,0,0,3.31-.54l6.8,1.89v-8.73h0A10.45,10.45,0,0,0,265.35,410.08Z" fill="#fff" opacity="0.5"/>
+              
+              <polygon points="298.77 401.35 298.31 402 284.06 422.04 284.06 408.21 283.84 408.05 274.28 401.33 298.19 401.35 298.77 401.35" fill="#fff" opacity="0.5"/>
+              
+              <polygon points="298.77 401.35 298.31 402 284.06 408.65 284.06 408.21 283.84 408.05 298.19 401.35 298.77 401.35" fill="#fff" opacity="0.5"/>
+              
+              <rect x="211.7" y="428.17" width="83.58" height="7.49" rx="3" fill="#fff" opacity="0.5"/>
+              
+              <rect x="211.7" y="441.9" width="124.75" height="7.49" rx="3" fill="#fff" opacity="0.5"/>
+              
+              <rect x="211.7" y="471.84" width="180.89" height="7.49" rx="3" fill="#fff" opacity="0.5"/>
+              
+              <rect x="211.7" y="458.11" width="234.53" height="7.49" rx="3" fill="#fff" opacity="0.5"/>
+              
+              <polygon points="440.8 401.33 440.8 422.04 448.73 414.45 456.22 422.04 456.22 401.35 440.8 401.33" fill="#fff" opacity="0.5"/>
+              
+              <polygon points="220.12 516.85 228.2 516.85 228.2 508.31 233.71 508.31 233.71 516.85 241.16 516.85 241.16 506.49 231.57 496.14 220.12 506.49 220.12 516.85" fill="#fff" opacity="0.5"/>
+              
+              <path d="M295.73,516.41l-4.87-4.87a10,10,0,1,0-.89.88l4.88,4.87a.63.63,0,0,0,.88,0A.63.63,0,0,0,295.73,516.41Zm-21-11.51a8.74,8.74,0,1,1,15,6.07.66.66,0,0,0-.17.12.67.67,0,0,0-.09.14,8.72,8.72,0,0,1-14.73-6.33Z" fill="#fff" opacity="0.5"/>
+              
+              <rect x="327.72" y="495.54" width="21.21" height="21.21" rx="3.95" fill="#fff" opacity="0.5"/>
+              
+              <polygon points="342.68 505.52 338.97 505.52 338.97 501.48 337.72 501.48 337.72 505.52 333.98 505.52 333.98 506.77 337.72 506.77 337.72 510.81 338.97 510.81 338.97 506.77 342.68 506.77 342.68 505.52" fill="#fff" opacity="0.5"/>
+              
+              <g opacity="0.5">
+              
+              <path d="M445.61,508.64a7.49,7.49,0,1,1,7.49-7.49A7.5,7.5,0,0,1,445.61,508.64Zm0-13.72a6.24,6.24,0,1,0,6.24,6.23A6.24,6.24,0,0,0,445.61,494.92Z" fill="#fff"/>
+              
+              </g>
+              
+              <g opacity="0.5">
+              
+              <path d="M458.09,516.75h-1.25v-.68a5.28,5.28,0,0,0-5.27-5.28H439.14a5.28,5.28,0,0,0-5.27,5.28v.68h-1.25v-.68a6.53,6.53,0,0,1,6.52-6.52h12.43a6.52,6.52,0,0,1,6.52,6.52Z" fill="#fff"/>
+              
+              </g>
+              
+              <path d="M348.93,127.52c-4.75,11.14-13.72,11-13.72,11a68.16,68.16,0,0,0-.56-10.76c-.56-1-6.93-4-6.93-4s-11.82,16.07-35.85,16.76c0,0,17.85-10.64,25.6-19.93,0,0,9-15.12,18.36,2.13C335.83,122.74,337.69,131.26,348.93,127.52Z" opacity="0.2"/>
+              
+              <path d="M285.31,145.8s-2,25.46-12.22,35.4c0,0,26.41-3.33,25.55-22.27a34.78,34.78,0,0,1-5.85-13.13Z" opacity="0.2"/>
+              
+              <path d="M407.11,56.41h-59a4.2,4.2,0,0,0-4.2,4.2V92.13a4.2,4.2,0,0,0,4.2,4.2h7a15.06,15.06,0,0,1-3.67,6.24c5.56-.62,8.34-3.49,9.74-6.24h45.94a4.2,4.2,0,0,0,4.2-4.2V60.61A4.2,4.2,0,0,0,407.11,56.41Z" fill="#ff6347" data-primary="true"/>
+              
+              <circle cx="355.79" cy="75.75" r="3.12" fill="#fff" opacity="0.5"/>
+              
+              <circle cx="377" cy="75.75" r="3.12" fill="#fff" opacity="0.5"/>
+              
+              <circle cx="398.21" cy="75.75" r="3.12" fill="#fff" opacity="0.5"/>
+              
+              <circle cx="521.4" cy="140" r="4.68" fill="#fff" opacity="0.5"/>
+              
+              <circle cx="489.59" cy="140" r="4.68" fill="#fff" opacity="0.5"/>
+              
+              <circle cx="457.78" cy="140" r="4.68" fill="#fff" opacity="0.5"/>
+              
+              <path d="M595.59,222.09s10.33,2.74,9.08,12.72c0,0,13.37-8.64,19.13-20.53a14.1,14.1,0,0,0,1-10.31c-1.29-4.19-4.86-8.62-14.49-6.52l2.41,6.71a12.11,12.11,0,0,1,.27,7.73C611.65,216.11,607.55,221.24,595.59,222.09Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M625.33,207.31a14.84,14.84,0,0,1-1.53,7c-5.75,11.87-19.13,20.52-19.13,20.52,1.25-10-9.08-12.71-9.08-12.71,11.95-.87,16.06-6,17.38-10.21a12.09,12.09,0,0,0-.11-7.29l-.15-.44-2.41-6.72c9.62-2.09,13.2,2.34,14.48,6.53A12.82,12.82,0,0,1,625.33,207.31Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M625.33,207.31c-5.32-8.41-12-3.1-12.47-2.71l0,0-2.53-7.19c9.62-2.09,13.2,2.34,14.48,6.53A12.82,12.82,0,0,1,625.33,207.31Z" fill="#fff" opacity="0.3"/>
+              
+              <path d="M631.17,308.62s2.29,44.75-13.35,67.18l18,18.69s33.68-26.2,37.43-81.09C673.29,313.4,666.39,318.81,631.17,308.62Z" fill="#f9b499"/>
+              
+              <path d="M663.31,314.65s-1.91,38.92-32.14,75l4.69,4.87s31.16-21.18,37.41-81.08C673.27,313.41,670.32,314.42,663.31,314.65Z" fill="#f7a48b"/>
+              
+              <path d="M620.89,264.75c9.64,25.78,10,57.7,7.1,84.85l.39-10.7c.48-24.84-.3-50.21-7.49-74.15Z" opacity="0.2"/>
+              
+              <path d="M601.81,493.67c8.07,3.49,16.89,4.53,25.58,5.09,1.26.09,2.51.11,3.78.22-1.26.17-2.51.27-3.78.39-8.74.4-18.16-.74-25.58-5.7Z" opacity="0.2"/>
+              
+              <path d="M601.81,508.66c4.42,2.3,9.67,1.93,14.52,1.77,4.31-.24,10.5-1.18,14.84-1.77-8.26,2.66-21.87,5.51-29.36,0Z" opacity="0.2"/>
+              
+              <path d="M631.17,631.77H578.59a6.72,6.72,0,0,1-4.18-1.34c-9.77-7.73,20.89-30.1,20.89-30.1l30.71.46,5.14.08,4.71,20.67C638.36,630.27,631.17,631.77,631.17,631.77Z" fill="#ff6347" data-primary="true"/>
+              
+              <path d="M631.17,631.77H587.73l-.61-.36c27.46-5.84,37.46-27.22,38.89-30.62l5.14.08,4.71,20.67C638.36,630.27,631.17,631.77,631.17,631.77Z" opacity="0.2"/>
+              
+              <path d="M371,300a9.73,9.73,0,0,1-8.32,6.2h-.11c-5.51.35-13.51-1.55-19.16-13.2,0,0-6.27-10.78-6.61-32l-1.6-17.47s-1.25-6.24,2.49-11.23A29.93,29.93,0,0,0,345,217.57a7.54,7.54,0,0,0-.06-2.8c-.67-3.53-1.82-12.49,5.28-7.41l.26.14c1.95,1.08,14.12,8.52,7.22,22.32,0,0-5,7.48,0,12.47C357.66,242.29,382.43,270.43,371,300Z" fill="#f9b499"/>
+              
+              <path d="M362.58,306.19c-5.51.35-13.51-1.55-19.16-13.2,0,0-6.27-10.78-6.61-32l-1.6-17.47s-1.25-6.24,2.49-11.23A29.93,29.93,0,0,0,345,217.57a7.54,7.54,0,0,0-.06-2.8c-.67-3.53-1.82-12.49,5.28-7.41l.26.14c.59,2.3.73,5.81-.51,11.11a24.26,24.26,0,0,1-4.35,9c-2.17,2.89-4.91,8.8-4.13,19.71C341.45,247.28,336.47,292.72,362.58,306.19Z" fill="#f7a48b"/>
+              
+              <ellipse cx="291.55" cy="143.74" rx="6.24" ry="8.73" fill="#f9b499"/>
+              
+              </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="formulir" class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Formulir
+        </h2>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                Formulir
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Peminjaman barang
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Formulir ini digunakan untuk peminjaman barang yang biasanya digunakan untuk event silahkan download dan diisi sesuai barang yang akan dipinjam kemudian di tanda tangan pimpinan divisi masing-masing, dokument ini kemudian di serahkan ke IT sebagai arsip
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-start">
+              <a href="https://docs.google.com/document/d/19x080pADBeVt7_Hhdix5KEVwR-EEYPSt/edit?usp=share_link&ouid=114627309848323436281&rtpof=true&sd=true">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Download
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                Formulir
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Permintaan barang
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Formulir ini digunakan untuk meminta suatu barang dari IT Seperti contoh Mouse, atau Keyboard Dll
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-center">
+              <a href="https://docs.google.com/document/d/1VRVoSSiAahv9J9qkztORRPFSSX_lxTmY/edit?usp=share_link&ouid=114627309848323436281&rtpof=true&sd=true">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Download
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                Formulir
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Pengajuan perbaikan / penggantian sparepart barang
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Digunakan untuk mengajukan perbaikan / penggantian sparepart yang rusak
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-end">
+              <a href="https://docs.google.com/document/d/1xmR_zZTUqWvsVLP6tTm7DwACLWUg8l7j/edit?usp=share_link&ouid=114627309848323436281&rtpof=true&sd=true">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Download
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f8fafc">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section id="panduan" class="container mx-auto text-center py-6 mb-12">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        Panduan
+      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <h3 class="my-4 text-3xl leading-tight">
+        Beberapa panduan yang mungkin berguna buat anda!
+      </h3>
+      <a href="https://drive.google.com/drive/folders/1hUH7y2V7EnAD6FloCH_NP2tHxLRPSdka?usp=share_link">
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Selengkapnya..
+      </button>
+      </a>
+    </section>
+    <!--Footer-->
+    <footer class="bg-white">
+      <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <div class="flex-1 mb-6 text-black">
+            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+              <!--Icon from: http://www.potlabicons.com/ -->
+              <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+                <path
+                  class="plane-take-off"
+                  d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
+                />
+              </svg>
+              IT Support
+            </a>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Links</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Social</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://www.facebook.com/speedlabindonesia" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://twitter.com/speedlab_idn?lang=id" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Company</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://reg.speedlab.id/" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official web</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://www.instagram.com/speedlabindonesia/?hl=id" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Instagram</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="https://mail.google.com/mail/u/?authuser=itsupport@speeedlab.id" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-gray-800");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-white");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
